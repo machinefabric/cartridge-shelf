@@ -1,0 +1,19 @@
+name: Bug, Feature Request, or Question
+description: Anything that isn't a cartridge submission, removal, or security report.
+title: "<short summary>"
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For cartridge submissions please use [Add Cartridge(s)](../../issues/new?template=add-cartridge.yml). For removals, [Remove Cartridge](../../issues/new?template=remove-cartridge.yml). For security issues, [Report a security vulnerability](../../issues/new?template=report-vulnerability.yml).
+
+        This template is for everything else: questions about how the shelf works, bugs in this repository (e.g. a stale URL in `accepted.txt`), or feature requests for the submission process.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What's going on?
+      description: Describe the bug, question, or request as clearly as you can. Include URLs, links, and any other context that helps us understand.
+    validations:
+      required: true

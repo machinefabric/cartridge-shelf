@@ -1,0 +1,59 @@
+name: Add Cartridge(s)
+description: Submit one or more cartridge repositories for inclusion in the canonical cartridge manifest.
+title: "Add <Cartridge>"
+labels:
+  - add-cartridge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Anyone can submit a cartridge for inclusion in the canonical [cartridges.machinefabric.com](https://cartridges.machinefabric.com/manifest) manifest. Feel free to submit cartridges you wrote yourself or cartridges someone else built that you'd like to see in the registry. There is no quality threshold — as long as the cartridges meet the requirements below, we'll accept them. If you're unsure about any of the requirements, submit anyway and we'll work it out together.
+
+        ### Requirements
+
+        - The cartridge repositories must be **publicly accessible** (no private repos, no auth-required endpoints).
+        - The repository URLs must include the protocol (usually `https://`) and the `.git` extension.
+        - Each repository must have at least one release tagged as a [semantic version](https://semver.org).
+        - Each cartridge must build, install, and run on macOS using the standard MachineFabric cartridge tooling.
+        - Each cartridge must declare valid cap URNs that parse via the `capdag` library; the `in` and `out` tags must reference media URNs already in the [standard registry](https://capdag.com), or proposed alongside this submission via [capfab](https://github.com/machinefabric/capfab/issues/new?template=add-media-spec.yml).
+        - All repository content must comply with our code of conduct.
+  - type: textarea
+    id: urls
+    attributes:
+      label: Cartridge repository URL(s)
+      description: |
+        List the URL(s) of every cartridge repository you'd like to submit. One URL per line. URLs must include the protocol and `.git` extension.
+      placeholder: |
+        https://github.com/<owner>/<cartridge-1>.git
+        https://github.com/<owner>/<cartridge-2>.git
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: What does each cartridge do?
+      description: |
+        For each URL, a sentence on what the cartridge provides — the operation it performs, the input/output media types, and what cap URNs it serves. We use this to plan the review and to write the manifest entry.
+      placeholder: |
+        - <url 1>: extracts text from PDF files. Serves `cap:in="media:pdf";op=extract;out=media:textable`.
+        - <url 2>: …
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Maintainer contact (optional)
+      description: |
+        If you maintain the submitted cartridges, the GitHub handle or contact address you'd like us to reach out on if we have questions during review.
+      placeholder: '@username'
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: Each repository URL listed above is publicly accessible without authentication.
+          required: true
+        - label: Each repository has at least one semantic-version release tag.
+          required: true
+        - label: I understand cap and media URNs are tagged URNs, not strings; routing is by `in`/`out` direction tags, never by string equality.
+          required: true

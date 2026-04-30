@@ -1,0 +1,44 @@
+name: Remove Cartridge
+description: Request that an accepted cartridge be removed from the canonical manifest.
+title: "Remove <Cartridge>"
+labels:
+  - remove-cartridge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request that we remove an accepted cartridge from the [canonical manifest](https://cartridges.machinefabric.com/manifest).
+
+        Removals are weighed against impact. Accepted cartridges are referenced by deployed installs and by users' saved machine notations, so we'll work with you on a deprecation path before pulling anything in active use.
+  - type: textarea
+    id: urls
+    attributes:
+      label: Cartridge repository URL(s) to remove
+      description: |
+        One URL per line, exactly as the URL appears in [`accepted.txt`](../../blob/main/accepted.txt).
+      placeholder: |
+        https://github.com/<owner>/<cartridge>.git
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why should this cartridge be removed?
+      description: |
+        What's wrong with the current cartridge? Is it abandoned, broken, superseded, malicious, or something else? If a replacement exists, link it.
+      placeholder: |
+        This cartridge was accepted in … but the upstream repo has been archived. The functionality is now provided by … .
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the cartridge
+      description: |
+        We weight removal requests differently depending on who's asking.
+      options:
+        - I am the cartridge author / maintainer
+        - I am a user of this cartridge
+        - I am unaffiliated and reporting an issue
+    validations:
+      required: true

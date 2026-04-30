@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: MachineFabric homepage
+    url: https://machinefabric.com
+    about: Background on the wider MachineFabric project that the cartridge shelf is part of.
+  - name: Canonical cartridge manifest
+    url: https://cartridges.machinefabric.com/manifest
+    about: The live registry that accepted cartridges are merged into.
+  - name: CapDAG registry
+    url: https://capdag.com
+    about: The registry of standard capability and media URNs your cartridge must reference.
+  - name: capfab — propose new caps or media specs
+    url: https://github.com/machinefabric/capfab/issues/new/choose
+    about: If your cartridge needs a capability or media spec that doesn't exist yet, propose it on capfab.
