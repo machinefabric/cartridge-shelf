@@ -8,7 +8,7 @@ If you've built a cartridge and want it included in the canonical manifest that 
 
 [**Submit a Cartridge**](../../issues/new?template=add-cartridge.yml)
 
-Anyone can propose a cartridge. There is no quality threshold — as long as the repo meets the requirements below, we'll review it. If you're unsure about any of the requirements, send the submission anyway and we'll work through them together.
+Anyone can propose a cartridge. As long as the repo meets the requirements below, we'll review it. If you're unsure about any of the requirements, send the submission anyway and we'll work through them together.
 
 ### Requirements
 

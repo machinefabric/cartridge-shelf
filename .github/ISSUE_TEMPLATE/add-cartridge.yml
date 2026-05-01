@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Anyone can submit a cartridge for inclusion in the canonical [cartridges.machinefabric.com](https://cartridges.machinefabric.com/manifest) manifest. Feel free to submit cartridges you wrote yourself or cartridges someone else built that you'd like to see in the registry. There is no quality threshold — as long as the cartridges meet the requirements below, we'll accept them. If you're unsure about any of the requirements, submit anyway and we'll work it out together.
+        Anyone can submit a cartridge for inclusion in the canonical [cartridges.machinefabric.com](https://cartridges.machinefabric.com/manifest) manifest. Feel free to submit cartridges you wrote yourself or cartridges someone else built that you'd like to see in the registry. As long as the cartridges meet the requirements below, we'll accept them. If you're unsure about any of the requirements, submit anyway and we'll work it out together.
 
         ### Requirements
 
@@ -57,3 +57,39 @@ body:
           required: true
         - label: I understand cap and media URNs are tagged URNs, not strings; routing is by `in`/`out` direction tags, never by string equality.
           required: true
+    - type : markdown
+      attributes:
+        value: |
+          **Cartridge Developer Terms – MachineFabric**
+
+          By publishing a cartridge, you agree to:
+
+          **1. Compliance**
+          You comply with applicable laws, including GDPR where relevant.
+
+          **2. Transparency**
+          You clearly disclose:
+
+          * What data is accessed
+          * Whether data leaves the device
+          * Any third-party services used
+
+          **3. Data Responsibility**
+          If your cartridge transmits or processes data externally, you act as an independent data controller.
+
+          **4. Security**
+          You implement reasonable security practices and do not intentionally introduce vulnerabilities.
+
+          **5. No Abuse**
+          You must not:
+
+          * Exfiltrate data without user knowledge
+          * Perform hidden tracking
+          * Execute malicious code
+
+          **6. Liability**
+          You are solely responsible for your cartridge and its effects.
+
+          **7. Removal**
+          MachineFabric reserves the right to remove or block cartridges that violate these terms.
+
