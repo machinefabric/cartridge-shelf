@@ -35,7 +35,7 @@ body:
       description: |
         For each URL, a sentence on what the cartridge provides — the operation it performs, the input/output media types, and what cap URNs it serves. We use this to plan the review and to write the manifest entry.
       placeholder: |
-        - <url 1>: extracts text from PDF files. Serves `cap:in="media:pdf";op=extract;out=media:textable`.
+        - <url 1>: extracts text from PDF files. Serves `cap:in="media:pdf";extract;out=media:textable`.
         - <url 2>: …
     validations:
       required: true
