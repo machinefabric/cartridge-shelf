@@ -9,6 +9,6 @@ contact_links:
   - name: CapDAG registry
     url: https://capdag.com
     about: The registry of standard capability and media URNs your cartridge must reference.
-  - name: capfab — propose new caps or media specs
+  - name: capfab — propose new caps or media definitions
     url: https://github.com/machinefabric/capfab/issues/new/choose
-    about: If your cartridge needs a capability or media spec that doesn't exist yet, propose it on capfab.
+    about: If your cartridge needs a capability or media definition that doesn't exist yet, propose it on capfab.

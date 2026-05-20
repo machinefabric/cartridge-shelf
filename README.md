@@ -16,7 +16,7 @@ Anyone can propose a cartridge. As long as the repo meets the requirements below
 - The repository URL must include the protocol (usually `https://`) and the `.git` extension, e.g. `https://github.com/<owner>/<name>.git`.
 - The repository must have at least one release tagged as a [semantic version](https://semver.org).
 - The cartridge must build, install, and run on macOS using the standard MachineFabric cartridge tooling.
-- The cartridge must declare valid cap URNs as defined by [`capfab`](https://github.com/machinefabric/capfab) — every cap URN it serves must parse via the `capdag` library and the `in` and `out` tags must reference media URNs that exist in the standard registry, or be defined alongside the cartridge submission via [capfab](https://github.com/machinefabric/capfab/issues/new?template=add-media-spec.yml).
+- The cartridge must declare valid cap URNs as defined by [`capfab`](https://github.com/machinefabric/capfab) — every cap URN it serves must parse via the `capdag` library and the `in` and `out` tags must reference media URNs that exist in the standard registry, or be defined alongside the cartridge submission via [capfab](https://github.com/machinefabric/capfab/issues/new?template=add-media-def.yml).
 - All repository content must comply with our [code of conduct](#code-of-conduct).
 
 ## Removing a cartridge

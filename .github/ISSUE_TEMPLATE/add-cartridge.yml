@@ -15,7 +15,7 @@ body:
         - The repository URLs must include the protocol (usually `https://`) and the `.git` extension.
         - Each repository must have at least one release tagged as a [semantic version](https://semver.org).
         - Each cartridge must build, install, and run on macOS using the standard MachineFabric cartridge tooling.
-        - Each cartridge must declare valid cap URNs that parse via the `capdag` library; the `in` and `out` tags must reference media URNs already in the [standard registry](https://capdag.com), or proposed alongside this submission via [capfab](https://github.com/machinefabric/capfab/issues/new?template=add-media-spec.yml).
+        - Each cartridge must declare valid cap URNs that parse via the `capdag` library; the `in` and `out` tags must reference media URNs already in the [standard registry](https://capdag.com), or proposed alongside this submission via [capfab](https://github.com/machinefabric/capfab/issues/new?template=add-media-def.yml).
         - All repository content must comply with our code of conduct.
   - type: textarea
     id: urls
