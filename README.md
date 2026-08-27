@@ -15,7 +15,7 @@ Anyone can propose a cartridge. As long as the repo meets the requirements below
 - The cartridge repository must be **publicly accessible** (no private repos, no auth-required endpoints).
 - The repository URL must include the protocol (usually `https://`) and the `.git` extension, e.g. `https://github.com/<owner>/<name>.git`.
 - The repository must have at least one release tagged as a [semantic version](https://semver.org).
-- The cartridge must build, install, and run on macOS using the standard MachineFabric cartridge tooling.
+- The cartridge must build, install, and run on macOS using the standard CapDAG cartridge tooling.
 - The cartridge must declare valid cap URNs — every URN it serves must parse via
   a CapDAG library, and its input and output media URNs must exist in the live
   fabric registry or be proposed through
