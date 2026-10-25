@@ -1,0 +1,10 @@
+{
+  "name": "cartridge-shelf",
+  "alias": "cartridge_shelf",
+  "templates_root": "..",
+  "version": {
+    "major": 1,
+    "file": "version.txt",
+    "detect_manifests": true
+  }
+}
